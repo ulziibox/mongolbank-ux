@@ -28,8 +28,9 @@
       {
         "group": "Design system",
         "pages": [
-          "design-system",
-          "handoff"
+          "design-system-2",
+          "component-libraries",
+          "handoff-docs"
         ]
       }
     ]
