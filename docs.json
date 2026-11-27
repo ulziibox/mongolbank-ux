@@ -9,15 +9,15 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "versions": [
+    "groups": [
       {
-        "version": "Get Started",
+        "group": "Get Started",
         "pages": [
           "index"
         ]
       },
       {
-        "version": "Research",
+        "group": "Research",
         "pages": [
           "research/ux-audit",
           "research/wcag",
@@ -26,17 +26,19 @@
         ]
       },
       {
-        "version": "Design system",
+        "group": "Design system",
         "pages": [
           "design-system",
           "handoff"
         ]
       },
       {
-        "version": "UX Writing"
+        "group": "UX Writing",
+        "pages": []
       },
       {
-        "version": "Handoff"
+        "group": "Handoff",
+        "pages": []
       }
     ]
   },
