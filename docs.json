@@ -9,43 +9,39 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "pages": [
+    "anchors": [
       {
-        "group": "Get Started",
+        "anchor": "Get Started",
+        "icon": "house",
         "pages": [
           "index"
-        ],
-        "icon": "house"
+        ]
       },
       {
-        "group": "Research",
+        "anchor": "Research",
         "icon": "search",
         "pages": [
           "research/ux-audit",
           "research/wcag",
-          "research/sitemap"
-        ]
-      },
-      {
-        "group": "Design system",
-        "icon": "component",
-        "pages": [
-          "design-system"
-        ]
-      },
-      {
-        "group": "UX Writing",
-        "icon": "pen-line",
-        "pages": [
+          "research/sitemap",
           "ux-writing"
         ]
       },
       {
-        "group": "Handoff",
-        "icon": "package",
+        "anchor": "Design system",
+        "icon": "component",
         "pages": [
+          "design-system",
           "handoff"
         ]
+      },
+      {
+        "anchor": "UX Writing",
+        "icon": "pen-line"
+      },
+      {
+        "anchor": "Handoff",
+        "icon": "package"
       }
     ]
   },
