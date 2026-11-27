@@ -1,37 +1,53 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Mongolbank.mn UX/UI Redesign",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#14347C",
+    "light": "#8DA6E8",
+    "dark": "#14347C"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "pages": [
       {
-        "group": "Getting Started",
+        "group": "Get Started",
         "pages": [
-          "index",
-          "quickstart"
+          "index"
+        ],
+        "icon": "house"
+      },
+      {
+        "group": "Research",
+        "icon": "search",
+        "pages": [
+          "research/ux-audit",
+          "research/wcag",
+          "research/sitemap"
+        ]
+      },
+      {
+        "group": "Design system",
+        "icon": "component",
+        "pages": [
+          "design-system"
+        ]
+      },
+      {
+        "group": "UX Writing",
+        "icon": "pen-line",
+        "pages": [
+          "ux-writing"
+        ]
+      },
+      {
+        "group": "Handoff",
+        "icon": "package",
+        "pages": [
+          "handoff"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -68,5 +84,9 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
+  },
+  "description": "mongolbank.mn-ийн UX аудит, redesign төслийн баримт бичиг",
+  "icons": {
+    "library": "fontawesome"
   }
 }

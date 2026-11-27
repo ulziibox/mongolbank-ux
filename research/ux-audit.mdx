@@ -1,0 +1,91 @@
+---
+title: "UX Audit"
+description: "v2 · 2026-11-26 · Heuristic + WCAG 2.1 AA · 15 хуудас · Desktop, Mobile · Нийт оноо 45.5 / 100"
+icon: "clipboard-check"
+keywords: ["UX audit", "heuristic evaluation", "Nielsen"]
+---
+
+Сайт хамгийн чухал өгөгдлөө (бодлогын хүү, инфляц, ханш, алт) нүүрэндээ тод харуулж, албан ёсны итгэл төрүүлж байна. Гол асуудал нь хэрэглэгч хайсан зүйлээ **олж чадахгүй** байгаа явдал: search үр дүнг огноогоор эрэмбэлдэг, цэс байгууллагын бүтцээр бүлэглэгдсэн, breadcrumb ба хажуугийн цэс өөр өөр байршил заадаг.
+
+<Columns cols={3}>
+  <Card title="45.5 / 100" icon="gauge">Нийт оноо</Card>
+  <Card title="22 / 50" icon="mouse-pointer-click">Usability · Nielsen 10 heuristic</Card>
+  <Card title="23.5 / 50" icon="sparkles">Дизайны чанар · 5 шалгуур</Card>
+</Columns>
+
+**39 асуудал:** Ноцтой 1 · Том 16 · Жижиг 20 · Өнгө, үзэмж 2
+
+## Хамгийн түрүүнд засах 3 санал
+
+<Steps>
+  <Step title="Search-ийг relevance-ээр эрэмбэлэх">
+    Ханш, тооцоолуур зэрэг бүх хуудсыг index-д оруулах.
+  </Step>
+  <Step title="Contrast-ийг 4.5:1-ээс дээш гаргах">
+    Саарал текстийг #5F6F84 болгох.
+  </Step>
+  <Step title="Нэг IA-аас навигаци үүсгэх">
+    Breadcrumb, хажуугийн цэс, үндсэн цэсийг нэг эх сурвалжаас, user task-аар бүлэглэх.
+  </Step>
+</Steps>
+
+## Асуудлууд
+
+Бүлэг бүрд screenshot, дараа нь асуудал тус бүрийн карт. Картын төрөл ноцтой байдлыг заана: `Danger` = Ноцтой, `Warning` = Том, `Note` = Жижиг, `Info` = Өнгө, үзэмж.
+
+### 01 · Search
+
+{/* Зураг: <Frame caption="..."><img src="/images/audit/15_search_hansh.jpg" alt="..." /></Frame> */}
+
+<Danger>
+**1 · Search үр дүнг огноогоор эрэмбэлдэг** · `U-25`
+
+**Асуудал:** «ханш» гэж хайхад 476 үр дүн гарах ч Валютын ханш хуудас эхний 5-д байхгүй. 9 үгнээс зөвхөн 1 нь зөв хуудсыг эхэнд гаргасан.
+
+**Санал:** Relevance-ээр эрэмбэлж, түгээмэл хайлтад «шууд хариулт» карт (жишээ нь өнөөдрийн USD ханш) гаргах.
+
+Ноцтой · Үндэслэл: Nielsen #7 Flexibility and efficiency of use
+</Danger>
+
+<Warning>
+**2 · Хэрэгслийн хуудас index-д ороогүй, typo засдаггүй** · `U-26`
+
+**Асуудал:** «зээлийн тооцоолуур» → 0, «ханщ» → 0. Autocomplete алга.
+
+**Санал:** Бүх хуудсыг index-д оруулж, synonym (ханш = валют = USD), fuzzy match, autocomplete нэмэх.
+
+Том · Үндэслэл: Postel's Law
+</Warning>
+
+{/* Цаашдаа: Нүүр хуудас, Судалгааны нийтлэл, Өгөгдлийн хуудас, Мэдээ, Тооцоолуур, Mobile, Accessibility, Бүтэц — дээрх загвараар */}
+
+## Оноо хэрхэн бүрдсэн
+
+<AccordionGroup>
+  <Accordion title="Usability — 22 / 50">
+    | Heuristic | Оноо |
+    |---|---|
+    | #1 Visibility of system status | 2.5 / 5 |
+    | #2 Match between system and the real world | 1.5 / 5 |
+    | #3 User control and freedom | 3.0 / 5 |
+    | #4 Consistency and standards | 1.0 / 5 |
+    | #5 Error prevention | 3.0 / 5 |
+    | #6 Recognition rather than recall | 2.5 / 5 |
+    | #7 Flexibility and efficiency of use | 0 / 5 |
+    | #8 Aesthetic and minimalist design | 1.5 / 5 |
+    | #9 Help users recognize, diagnose and recover from errors | 2.5 / 5 |
+    | #10 Help and documentation | 4.5 / 5 |
+  </Accordion>
+  <Accordion title="Дизайны чанар — 23.5 / 50">
+    | Шалгуур | Оноо |
+    |---|---|
+    | Good design (Dieter Rams) | 3.5 / 10 |
+    | Desirability | 5 / 10 |
+    | Usefulness | 6 / 10 |
+    | Findability | 2 / 10 |
+    | Credibility | 7 / 10 |
+  </Accordion>
+  <Accordion title="Дүрэм">
+    Heuristic бүр 5 онооноос эхэлж, асуудал бүрт хасагдана: Ноцтой −2, Том −1, Жижиг −0.5, Өнгө, үзэмж −0.25 (0-ээс доош буухгүй). Rams-ийн зарчим бүр 1 / 0.5 / 0; бусад шалгуурын 5 дэд асуулт тус бүр 2 / 1 / 0.
+  </Accordion>
+</AccordionGroup>
