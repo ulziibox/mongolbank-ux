@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Mongolbank.mn UX/UI Redesign",
   "colors": {
-    "primary": "#14347C",
-    "light": "#8DA6E8",
-    "dark": "#14347C"
+    "primary": "#FE4D00",
+    "light": "#FFFFFF",
+    "dark": "#151515"
   },
   "favicon": "/favicon.svg",
   "navigation": {
