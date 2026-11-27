@@ -49,14 +49,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "href": "mailto:bat-ulzii@esource.mn",
+        "label": "Write a email"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Contact to Designer",
+      "href": "https://linktr.ee/ulziibox"
     }
   },
   "contextual": {
